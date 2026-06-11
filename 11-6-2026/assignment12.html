@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amazon Store</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #131921;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            color: #ff9900;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .search-box {
+            display: flex;
+            width: 45%;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            outline: none;
+        }
+
+        .search-box button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #febd69;
+            cursor: pointer;
+        }
+
+        .nav-buttons button {
+            padding: 10px 15px;
+            margin-left: 10px;
+            border: none;
+            background-color: #232f3e;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .nav-buttons button:hover,
+        .search-box button:hover {
+            opacity: 0.8;
+        }
+        .banner {
+            background-color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .banner h1 {
+            color: #131921;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            background-color: white;
+            width: 220px;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px lightgray;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .card button {
+            background-color: #ff9900;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">amazon</div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search Amazon">
+            <button>Search</button>
+        </div>
+
+        <div class="nav-buttons">
+            <button>🛒 Cart</button>
+            <button>Sign In</button>
+        </div>
+    </div>
+    <div class="banner">
+        <h1>Welcome to Amazon Store</h1>
+        <p>Shop your favourite products at amazing prices!</p>
+    </div>
+    <div class="products">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/220x180?text=Headphones" alt="Headphones">
+            <h3>Wireless Headphones</h3>
+            <p class="price">₹1,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/220x180?text=Smart+Watch" alt="Watch">
+            <h3>Smart Watch</h3>
+            <p class="price">₹2,499</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/220x180?text=Shoes" alt="Shoes">
+            <h3>Running Shoes</h3>
+            <p class="price">₹1,299</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/220x180?text=Backpack" alt="Backpack">
+            <h3>Travel Backpack</h3>
+            <p class="price">₹899</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
